@@ -1,0 +1,11 @@
+{
+    "sw-cms": {
+        "blocks": {
+            "imageText": {
+                "imageTextsixSlot": {
+                    "label": "images/Text, six slot - DE"
+                }
+            }
+        }
+    }
+}

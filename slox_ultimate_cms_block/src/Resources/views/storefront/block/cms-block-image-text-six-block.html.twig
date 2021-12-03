@@ -1,0 +1,171 @@
+{% block block_image_text_six_block %}
+    {% set columns = 6 %}
+    {% set id = element.id %}
+
+<style>
+.block-image-text-six-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: start;
+    grid-gap: 10px;
+    width:100%;
+}
+
+.block-image-text-six-block .cms-element-text {
+    padding: 10px;
+}
+
+.block-image-text-six-block .cms-image-container.is-cover {
+    min-height: 180px !important
+}
+
+.block-image-text-six-block .block-image-text-six-block__five,
+.block-image-text-six-block .block-image-text-six-block__four,
+.block-image-text-six-block .block-image-text-six-block__one,
+.block-image-text-six-block .block-image-text-six-block__six,
+.block-image-text-six-block .block-image-text-six-block__three,
+.block-image-text-six-block .block-image-text-six-block__two {
+    min-width: 200px;
+    flex-grow: 1;
+    {# box-shadow: 0 0 4px 0 rgba(0, 0, 0, .2) #}
+}
+
+.block-image-text-six-block a {
+   background-color: rgba(0, 0, 0, 0);
+   padding: 0px;
+}
+</style>
+
+
+
+<div class="block-image-text-six-block">
+    {% block block_image_text_six_block__one %}
+        
+            <div class="block-image-text-six-block__one">
+                {% block block_image_text_six_block__one_image %}
+                    {% set element = block.slots.getSlot('one-image') %}
+
+                    <div data-cms-element-id="{{ id }}">
+                        {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                    </div>
+                {% endblock %}
+
+                {% block block_image_text_six_block__one_text %}
+                    {% set element = block.slots.getSlot('one-text') %}
+
+                    <div data-cms-element-id="{{ id }}">
+                        {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                    </div>
+                {% endblock %}
+            </div>
+      
+    {% endblock %}
+    {% block block_image_text_six_block__two %}
+       
+            <div class="block-image-text-six-block__two">
+                {% block block_image_text_six_block__two_image %}
+                    {% set element = block.slots.getSlot('two-image') %}
+
+                    <div data-cms-element-id="{{ id }}">
+                        {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                    </div>
+                {% endblock %}
+
+                {% block block_image_text_six_block__two_text %}
+                    {% set element = block.slots.getSlot('two-text') %}
+
+                    <div data-cms-element-id="{{ id }}">
+                        {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                    </div>
+                {% endblock %}
+            </div>
+
+    {% endblock %}
+    {% block block_image_text_six_block__three %}
+    
+            <div class="block-image-text-six-block__three">
+                {% block block_image_text_six_block__three_image %}
+                    {% set element = block.slots.getSlot('three-image') %}
+
+                    <div data-cms-element-id="{{ id }}">
+                        {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                    </div>
+                {% endblock %}
+
+                {% block block_image_text_six_block__three_text %}
+                    {% set element = block.slots.getSlot('three-text') %}
+
+                    <div data-cms-element-id="{{ id }}">
+                        {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                    </div>
+                {% endblock %}
+            </div>
+   
+    {% endblock %}
+    {% block block_image_text_six_block__four %}
+
+            <div class="block-image-text-six-block__four">
+                {% block block_image_text_six_block__four_image %}
+                    {% set element = block.slots.getSlot('four-image') %}
+
+                    <div data-cms-element-id="{{ id }}">
+                        {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                    </div>
+                {% endblock %}
+
+                {% block block_image_text_six_block__four_text %}
+                    {% set element = block.slots.getSlot('four-text') %}
+
+                    <div data-cms-element-id="{{ id }}">
+                        {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                    </div>
+                {% endblock %}
+            </div>
+ 
+    {% endblock %}
+    {% block block_image_text_six_block__five %}
+
+            <div class="block-image-text-six-block__five">
+                {% block block_image_text_six_block__five_image %}
+                    {% set element = block.slots.getSlot('five-image') %}
+
+                    <div data-cms-element-id="{{ id }}">
+                        {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                    </div>
+                {% endblock %}
+
+                {% block block_image_text_six_block__five_text %}
+                    {% set element = block.slots.getSlot('five-text') %}
+
+                    <div data-cms-element-id="{{ id }}">
+                        {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                    </div>
+                {% endblock %}
+            </div>
+   
+    {% endblock %}
+    {% block block_image_text_six_block__six %}
+
+            <div class="block-image-text-six-block__six">
+                {% block block_image_text_six_block__six_image %}
+                    {% set element = block.slots.getSlot('six-image') %}
+
+                    <div data-cms-element-id="{{ id }}">
+                        {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                    </div>
+                {% endblock %}
+
+                {% block block_image_text_six_block__six_text %}
+                    {% set element = block.slots.getSlot('six-text') %}
+
+                    <div data-cms-element-id="{{ id }}">
+                        {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                    </div>
+                {% endblock %}
+            </div>
+
+    {% endblock %}
+ </div>
+{% endblock %}

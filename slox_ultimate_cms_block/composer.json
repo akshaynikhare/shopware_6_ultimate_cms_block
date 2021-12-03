@@ -1,0 +1,39 @@
+{
+    "name": "cadnative/slox_ultimate_cms_block",
+    "description": "ultimate CMS block forShopware 6",
+    "version": "v1.0.3",
+    "type": "shopware-platform-plugin",
+    "license": "proprietary",
+    "authors": [{
+        "name": "Akshay Nikhare",
+        "email": "akshay.victrans@gmail.com",
+        "homepage": "https://github.com/akshaynikhare",
+        "role": "Developer"
+    }],
+    "require": {
+        "shopware/core": "*",
+        "shopware/administration": "*",
+        "shopware/storefront": "*"
+    },
+    "extra": {
+        "shopware-plugin-class": "slox_ultimate_cms_block\\slox_ultimate_cms_block",
+        "label": {
+            "de-DE": "ultimate CMS block forShopware 6",
+            "en-GB": "ultimate CMS block forShopware 6"
+        },
+        "description": {
+            "de-DE": "ultimate CMS block forShopware 6",
+            "en-GB": "ultimate CMS block forShopware 6"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "slox_ultimate_cms_block\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "slox_ultimate_cms_block\\Tests\\": "tests/"
+        }
+    }
+}

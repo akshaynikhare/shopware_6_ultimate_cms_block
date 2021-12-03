@@ -1,0 +1,16 @@
+.sw-cms-preview-image-text-six-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    padding: 10px;
+    .sw-cms-preview-image-text-six-block {
+        // box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+    }
+    .sw-cms-preview-image-text-six-block__image {
+        height: 60px;
+    }
+    .sw-cms-preview-image-text-six-block__text {
+        padding: 2px;
+        text-align: center;
+    }
+}
